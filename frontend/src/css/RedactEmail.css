@@ -1,0 +1,102 @@
+.compose-button {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 24px 44px rgba(15, 23, 42, 0.18);
+  z-index: 20;
+}
+
+.redact-email-card {
+  position: fixed;
+  bottom: 0;
+  right: 24px;
+  width: min(520px, calc(100vw - 32px));
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px 18px 12px 12px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  z-index: 20;
+}
+
+.redact-email-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.redact-email-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.redact-email-controls button {
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 12px;
+  background: var(--surface-soft);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.redact-email-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 18px 20px;
+  flex: 1;
+  overflow: auto;
+}
+
+.redact-email-input,
+.redact-email-textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface-soft);
+  color: var(--text);
+  padding: 14px 16px;
+  outline: none;
+}
+
+.redact-email-input:focus,
+.redact-email-textarea:focus {
+  border-color: var(--accent);
+  background: #ffffff;
+}
+
+.redact-email-textarea {
+  min-height: 180px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.redact-email-footer {
+  padding: 16px 20px;
+  border-top: 1px solid var(--border);
+  background: var(--surface-soft);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.redact-email-footer .send-button {
+  min-width: 110px;
+  padding: 12px 18px;
+  border-radius: 14px;
+  background: var(--accent);
+  color: #fff;
+}

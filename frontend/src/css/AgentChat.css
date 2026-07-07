@@ -1,0 +1,139 @@
+/* ==========================================================================
+   AgentChat — minimal assistant panel
+   ========================================================================== */
+
+.chat-card {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px 22px;
+  border-bottom: 1px solid var(--border);
+}
+
+.panel-label {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.chat-header h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.chat-status {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #0a56d6;
+  background: rgba(15, 98, 255, 0.1);
+  border-radius: 999px;
+  padding: 6px 12px;
+}
+
+.chat-thread {
+  flex: 1;
+  min-height: 0;
+  padding: 24px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  text-align: center;
+}
+
+.chat-note {
+  margin: 0;
+  max-width: 240px;
+  line-height: 1.6;
+}
+
+.chat-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  padding: 0 22px 18px;
+}
+
+.chat-actions button {
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface-soft);
+  color: var(--text);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.chat-actions button:hover {
+  background: var(--surface);
+  border-color: var(--accent-soft);
+}
+
+.chat-input {
+  display: grid;
+  gap: 12px;
+  padding: 18px 22px 22px;
+}
+
+.chat-input label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.chat-input input,
+.chat-input textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface-soft);
+  color: var(--text);
+  padding: 12px 14px;
+  outline: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.chat-input input:focus,
+.chat-input textarea:focus {
+  border-color: var(--accent);
+  background: #ffffff;
+}
+
+.send-button {
+  margin: 0 22px 22px;
+  padding: 14px 0;
+  border: none;
+  border-radius: 14px;
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.send-button:hover:not(:disabled) {
+  background: #0846c5;
+}
+
+.send-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}

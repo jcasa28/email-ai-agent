@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# Python
+backend/venv/
+backend/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Environment variables
+backend/.env
+frontend/.env
+.env
+
+# Gmail API
+backend/credentials.json
+backend/token.json
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# IDE
+.vscode/
+.idea/

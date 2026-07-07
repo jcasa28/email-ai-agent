@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  color-scheme: light;
+  --bg: #f4f5f7;
+  --surface: #ffffff;
+  --surface-soft: #f8f9fb;
+  --border: #d8dbe0;
+  --text: #111827;
+  --muted: #586170;
+  --accent: #0f62ff;
+  --accent-soft: #e7f1ff;
+  --shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.app-shell {
+  min-height: 100vh;
+  /* padding: 18px; */
+}
+
+.workspace-grid {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr) 320px;
+  gap: 18px;
+  min-height: calc(100vh - 36px);
+}
+
+@media (max-width: 1180px) {
+  .workspace-grid {
+    grid-template-columns: 240px minmax(0, 1fr);
+  }
+
+  .chat-card {
+    display: none;
+  }
+}
+
+@media (max-width: 840px) {
+  .workspace-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar-card,
+  .email-container,
+  .chat-card {
+    max-width: 100%;
+  }
+}
