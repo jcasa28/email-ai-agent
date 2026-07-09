@@ -66,14 +66,14 @@ function RedactEmail() {
   return (
     <>
       {/* COMPOSE BUTTON (solo si está cerrado) */}
-      {!isOpen && (
-        <button
-          className="compose-button"
-          onClick={() => setIsOpen(true)}
-        >
-          Compose
-        </button>
-      )}
+
+      <button
+        className="compose-button"
+        onClick={() => setIsOpen(true)}
+      >
+        Compose
+      </button>
+      
 
       {/* COMPOSE WINDOW */}
       {isOpen && (

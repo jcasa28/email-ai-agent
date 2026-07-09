@@ -1,16 +1,14 @@
 .compose-button {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
-  padding: 14px 22px;
+  left: 70%;
+  top: 3%;
+  padding: 14px;
   border: none;
-  border-radius: 999px;
+  border-radius: 14px;
   background: var(--accent);
-  color: #fff;
+  color: #ffffff;
   font-weight: 700;
   cursor: pointer;
-  box-shadow: 0 24px 44px rgba(15, 23, 42, 0.18);
-  z-index: 20;
 }
 
 .redact-email-card {
@@ -24,9 +22,7 @@
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 18px 18px 12px 12px;
-  box-shadow: var(--shadow);
   overflow: hidden;
-  z-index: 20;
 }
 
 .redact-email-header {

@@ -108,7 +108,7 @@
   color: var(--text);
   padding: 12px 14px;
   outline: none;
-  transition: border-color 0.2s ease, background 0.2s ease;
+  
 }
 
 .chat-input input:focus,
@@ -126,7 +126,7 @@
   color: #ffffff;
   font-weight: 700;
   cursor: pointer;
-  transition: background 0.2s ease;
+  
 }
 
 .send-button:hover:not(:disabled) {
